@@ -8,5 +8,8 @@
     "stop": "pm2 stop webhook"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^6.3.1"
+  }
 }
