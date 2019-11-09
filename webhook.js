@@ -15,7 +15,7 @@ let server = http.createServer(function(req,res){
 		})
 		req.on('end',function(buffer){
 		   let body = buffer.concat(buffers);
-		   let event= req.header['x-github-event'];
+		   let event= req.headers['x-github-event'];
 		   let sig   = req.headers['x-hub-signature'];
 		      if(sig !== sign(body)){
 		        return res.end('Not Allowed');
