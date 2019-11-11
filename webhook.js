@@ -14,7 +14,7 @@ let server = http.createServer(function(req,res){
 			buffers.push(buffer)
 		})
 		req.on('end',function(buffer){
-		   let body = buffer.concat(buffers);
+		   let body = Buffer.concat(buffers);
 		   let event= req.headers['x-github-event'];
 		   let sig   = req.headers['x-hub-signature'];
 		      if(sig !== sign(body)){
