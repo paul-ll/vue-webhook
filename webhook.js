@@ -20,7 +20,7 @@ let server = http.createServer(function(req,res){
 		      if(sig !== sign(body)){
 		        return res.end('Not Allowed');
 		      }
-		})
+		
 		res.setHeader('Content-Type','application/json')
 		res.end(JSON.stringify({ok:true}))
 		 if(event === 'push'){
@@ -39,6 +39,7 @@ let server = http.createServer(function(req,res){
         `);
         });
       }
+      })
 	}else {
 		res.end('Not Found')
 	}
