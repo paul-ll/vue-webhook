@@ -6,6 +6,7 @@ git reset --hard origin/master
 git clean -f
 echo "拉取后台最新代码"
 git pull origin master
+npm install 
 
 
 WORK_PATH='/usr/projects/vue-front'
@@ -16,6 +17,7 @@ git clean -f
 echo "拉取前台最新代码"
 git pull origin master
 echo "打包前台最新代码"
+npm install
 npm run build
 
 cd /usr/projects
