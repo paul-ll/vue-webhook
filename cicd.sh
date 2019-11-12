@@ -24,4 +24,5 @@ cd /usr/projects
 echo "删除老资源"
 docker-compose down
 echo "重启所有服务"
+docker-compose up
 docker-compose up -d
