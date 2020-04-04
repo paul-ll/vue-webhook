@@ -24,7 +24,7 @@ function sendMail(message){
         if (error) {
             return console.log(error);
         }
-        console.log('Message sent: %s', info.messageId);
+        console.log('Message 1 sent: %s', info.messageId);
     });
 }
 module.exports = sendMail;
