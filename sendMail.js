@@ -16,7 +16,7 @@ function sendMail(message){
     let mailOptions = {
         from: '"543605071" <543605071@qq.com>', // 发送地址
         to: '543605071@qq.com', // 接收者
-        subject: '部署通知21', // 主题 
+        subject: '部署通知', // 主题 
         html:message // 内容主体
     };
     // send mail with defined transport object
