@@ -10,7 +10,7 @@ echo "打包最新代码"
 npm install
 npm run build
 echo "开始构建镜像"
-docker build -t vue-admin:1.0 .
+docker build -t vue-admin:1.0
 echo "删除旧容器"
 docker stop vue-admin-container
 docker rm vue-admin-container
