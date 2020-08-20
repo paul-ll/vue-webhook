@@ -15,4 +15,4 @@ echo "删除旧容器"
 docker stop vue-front-container
 docker rm vue-front-container
 echo "启动新容器"
-docker container run -p 8088:80 -d --name vue-front-container vue-front:1.0
+docker container run -p 8088:8088 -d --name vue-front-container vue-front:1.0
